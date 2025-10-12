@@ -4,9 +4,10 @@ import "./Navbar.css"
 const Navbar = () => {
   return (
     <div>
-        <ul>
-            <li>Github</li>
-        </ul>
+      <ul>
+        <h1>Weather App</h1>
+        <a href='https://github.com/amitbishnoii'>Github</a>
+      </ul>
     </div>
   )
 }
