@@ -24,8 +24,9 @@ function App() {
           <button onClick={handleClick}>Check</button>
         </div>
         <div className="weather-data">
-          {weather && <p>City: {weather.location.name}</p>}
-          {weather && <p>Region: {weather.location.region}</p>}
+          <img src={weather.current.condition.icon} alt={weather.current.condition.text} />
+          <p>Feels like {weather.current.feelslike_c}, {weather.current.condition.text}</p>
+          {weather && <p>{weather.location.name}, {weather.location.region}, {weather.location.country}</p>}
           {weather && <p>Temprature: {weather.current.temp_c}</p>}
         </div>
       </div>
